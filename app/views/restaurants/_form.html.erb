@@ -1,0 +1,16 @@
+<%= simple_form_for @restaurant do |f| %>
+<div class="container">
+  <div class="row mb-3">
+    <div class="col-md-4">
+     <h5 class= "text-primary"><%= f.input :name %> </h5>
+    </div>
+  <div class="col-md-4">
+    <h5 class= "text-primary"><%= f.input :address %> </h5>
+  </div>
+  <div class="col-md-4 d-flex align-items-end">
+    <%= f.submit class: "btn btn-primary"%>
+  </div>
+      <% end %>
+    </div>
+  </div>
+

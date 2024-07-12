@@ -1,0 +1,14 @@
+<%= turbo_frame_tag restaurant do %>
+<div class="card mb-3 opacidad" style="width: 180px;">
+   <%= restaurant.name %>
+   <%= restaurant.address %>
+   <div class="row ">
+  <div class="col-md-6 ">
+<%= link_to "" , restaurant_path(restaurant), data: {turbo_method: :delete}, class: 'btn btn-danger bi bi-trash3 custom-icon' %>
+  </div>
+    <div class="col-md-6 ">
+ <%= link_to 'Edit', edit_restaurant_path(restaurant), class: 'btn btn-warning bi bi-pencil-square' %>
+       </div>
+    </div>
+  </div>
+<% end %>

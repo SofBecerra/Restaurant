@@ -1,0 +1,5 @@
+<h1 class="mb-4 mt-5 text-center text ">Edit</h1>
+
+ <%= turbo_frame_tag @restaurant do %>
+   <%= render 'form',  restaurant: @restaurants %>
+<% end %>

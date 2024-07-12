@@ -1,0 +1,4 @@
+<h1 class= "mb-2 mt-5 text-center text ">Crea un nuevo restaurante</h1>
+ <%= turbo_frame_tag "new_restaurant" do %>
+   <%= render 'form',  restaurant: @restaurants %>
+ <% end %>
